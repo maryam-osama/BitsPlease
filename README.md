@@ -1,9 +1,9 @@
 # BitsPlease
 Software geeks
-1- Norine Hesham Badr
+1-Norine Hesham Badr,
+2-Maryam Osama Ahmed,
+3-The awesomest person alive!,
+4-khadija,
 
-3- Rawan Hussein
-
-2- The awesomest person alive!
 
 6- Rawan Hussein
