@@ -4,7 +4,7 @@ Members                | IDs
 -----------------------|------
 Norine Hesham Badr     
 Maryam Osama Ahmed     | 28-8151
-3-fady amgad saad
+fady amgad saad        | 28-1233
 khadija ibrahim        | 28-1093
 5-Mai Kany
 6-Rawan Hussein
