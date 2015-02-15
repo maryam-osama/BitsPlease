@@ -1,10 +1,12 @@
 # BitsPlease
 Software geeks
-1-Norine Hesham Badr,
-2-Maryam Osama Ahmed,
-3-fady amgad saad,
-4-khadija,
-5-Mai Kany,
-6-Rawan Hussein,
-7- Samaa Youssef Sallam,
+Members                | IDs
+-----------------------|------
+Norine Hesham Badr     
+Maryam Osama Ahmed     | 28-8151
+3-fady amgad saad
+4-khadija
+5-Mai Kany
+6-Rawan Hussein
+7- Samaa Youssef Sallam
 8- Basma Elgeziry
