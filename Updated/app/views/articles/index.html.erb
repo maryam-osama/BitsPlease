@@ -74,9 +74,9 @@ input[type="submit"] {
 
 
 <% if user_signed_in? %>
-
+<% if current_user.try(:admin?) %> 
 <%= link_to 'New article', new_article_path %>
-
+ <% end %>
 <% end %>
  
 
