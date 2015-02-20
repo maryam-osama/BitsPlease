@@ -38,6 +38,8 @@ end
   #     resource :seller
   #   end
 
+match "/users/sign_out", via: [:get, :delete], to: "devise/sessions#destroy"
+
   # Example resource route with more complex sub-resources:
   #   resources :products do
   #     resources :comments
