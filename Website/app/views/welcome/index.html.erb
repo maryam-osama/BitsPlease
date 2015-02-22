@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<% if user_signed_in? %>
+<%= link_to "Sign Out",destroy_user_session_path, :method => :delete %>
+      <% end %>
+      
+<html class="no-js" lang="en">
+    
+<body background= "http://i.imgur.com/fGbocPA.jpg " style="
+padding-top: 290px;
+padding-bottom: 16px;
+background-position: center;
+background-repeat: no-repeat;
+height: 490px;
+width: 100%;
+background-size: cover;">
+    
+<title> Bits Please</title>
+
+ 
+  <div id="wrapper"> 
+  
+  <div id="header" >
+      
+ <!--  "https://unique-maryam-osama.c9.io/users/sign_in" -->
+      
+     <!-- <a href= "https://unique-maryam-osama.c9.io/users/sign_in" style=" position:absolute; top:30px; left:1080px; width:100px; height:25px; font-size:17pt;color:yellow; "><b>Sign In </b></a>
+     <a href="https://unique-maryam-osama.c9.io/users/sign_up" style=" position:absolute; top:30px; left:1200px; width:100px; height:25px; font-size:17pt;color:yellow; "><b>Sign Up </b></a> -->
+
+     <a  href="#8"style=" position:absolute; top:30px; left:1080px; width:100px; height:25px;font-size:17pt;color:yellow; "><b><strong>Team </strong></b></a>
+     <a href="<%= url_for controller: 'articles', action: 'index' %>" style=" position:absolute; top:30px; left:1200px; width:100px; height:25px;font-size:17pt; color:yellow;" > <b><strong>Blogs </strong></b></a>
+     
+ </div>
+
+
+</div>
+
+
+
+<h2> Think. Write. Share.</h2>
+<p id="centertext"> Got something on your mind? Happy to hear about it. </p>
+
+
+<p id="user1">
+        <% if user_signed_in? %>
+         
+        <% else %>
+        <%= link_to "Sign Up",new_user_registration_path %> or  <%= link_to "Sign In",new_user_session_path %>
+        <% end %> </p>
+
+
+<div id="8">
+	<img src="http://i.imgur.com/uRWG8fh.jpg" style=" margin-top:300px; border-radius:50%; width:400px;" >
+ 
+</div>
+
+
+
+	
+
+	<a href= "<%= url_for controller: 'welcome', action: 'norineprof' %>" target="_blank"><img class= "p1" src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-
+
+xpf1/v/t34.0-12/11009056_10203315883932233_472573945_n.jpg?
+
+oh=e8c82f28c7339ae44a646727ff22d6de&oe=54EB7EE0&__gda__=1424
+
+660180_bdfe833289fedc218c68012e25abbcf4
+" height="142" width="142" > </a>
+
+
+
+ <a href="<%= url_for controller: 'welcome', action: 'basmaprof' %>" target="_blank"><img class="p2" src="https://fbcdn-sphotos-a-a.akamaihd.net/hphotos-ak-
+
+xfa1/v/t1.0-
+
+9/10845945_10152651497702798_6638216495900984199_n.jpg?
+
+oh=1e20c32a22b2f6572c2ad4b70355f311&oe=55873112&__gda__=1434
+
+678783_08c9d478e3ef0b54252240460968b9b5"height="142" width="142">
+
+<a href="<%= url_for controller: 'welcome', action: 'khadija' %>"  target="_blank"><img class="p3"src="https://fbcdn-sphotos-e-a.akamaihd.net/hphotos-ak-
+
+xpa1/v/t1.0-
+
+9/10505390_10203162338673978_2143559561917393133_n.jpg?
+
+oh=1f11b3d74a374caa5dcd9771c3f7e6c5&oe=5551B35F&__gda__=1431
+
+714121_d96bf1cd90d0a2fb3c2197b836a4cb7e"height="142" width="142">
+
+
+<a href="<%= url_for controller: 'welcome', action: 'maryam' %>"  target="_blank;"><img class="p4"src="http://i.imgur.com/IpdTckL.png" height="142" width="142">
+
+<a href="<%= url_for controller: 'welcome', action: 'mai' %>"  target="_blank;"><img class="p5"src="http://i.imgur.com/kZbigSS.jpg"height="142" width="142">
+
+
+
+<a href="<%= url_for controller: 'welcome', action: 'sama' %>"  target="_blank;"><img class="p6" src="http://i.imgur.com/DSeb018.jpg"height="142" width="142">
+
+<a href="<%= url_for controller: 'welcome', action: 'fady' %>"  target="_blank;"><img class="p7" src="https://fbcdn-sphotos-h-a.akamaihd.net/hphotos-ak-xap1/v/t1.0-9/65513_10151518184238690_887815397_n.jpg?oh=96f58404c35a19b59c0ce91cf88dbf34&oe=558E164F&__gda__=1434673356_e70c258afe2218113e13d9201c54b78f"height="142" width="142">
+
+
+<a href= "<%= url_for controller: 'welcome', action: 'rawan' %>"  target="_blank;"><img class="p8"src="http://images.clipartpanda.com/cool-clipart--cool-clipart-9.jpg"height="142" width="142">
+
+
+
+</body>
+</html>
+  <style>
+.p8{
+	 position: absolute;
+    left: 950px;
+    top: 1150px;
+border-radius: 100%;
+}
+.signin{
+   margin-left: 100px;
+   margin-bottom: 100px;
+   
+
+}
+.p7{
+	 position: absolute;
+    left: 690px;
+    top: 1150px;
+border-radius: 100%;
+}
+
+ h2{
+
+  	color: white;
+  	font: Helvetica, sans-serif;
+  	margin-top: 12px;
+    font-size:30pt;
+    height:20px;
+    margin-bottom: 35px;
+    text-align:center;
+    vertical-align:middle;
+  
+  }
+
+.p6{
+	 position: absolute;
+    left:  430px;
+    top: 1150px;
+border-radius: 100%;
+}
+.p5{
+	 position: absolute;
+    left: 150px;
+    top: 1150px;
+border-radius: 100%;
+}
+.p4{
+	 position: absolute;
+    left: 950px;
+    top: 950px;
+border-radius: 100%;
+}
+.p3{
+	 position: absolute;
+    left: 690px;
+    top: 950px;
+border-radius: 100%;
+}
+
+.p2{
+    position: absolute;
+    left: 430px;
+    top: 950px;
+border-radius: 100%;
+
+}
+.p1{
+    position: absolute;
+    left: 150px;
+    top: 950px;
+border-radius: 100%;
+
+}
+
+  #info{
+
+  	clear:both;
+font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+  }
+  #aboutus{
+  	color:black;
+  }
+  #centertext{
+  	color: white;
+  	font: Helvetica, sans-serif;
+    font-size:15pt;
+    height:10px;
+    text-align:center;
+    vertical-align:middle;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  }
+  
+  #user1{
+    color: white;
+  	font: Helvetica, sans-serif;
+    font-size:20pt;
+    height:10px;
+   
+   
+    
+  }
+  
+  
+  h3{
+
+  	color: white;
+  	font: Helvetica, sans-serif;
+    font-size:30pt;
+    height:5px;
+    text-align:center;
+    vertical-align:middle;
+  }
+  h2{
+
+  	color: white;
+  	font: Helvetica, sans-serif;
+  	margin-top: 12px;
+    font-size:30pt;
+    height:20px;
+    margin-bottom: 35px;
+    text-align:center;
+    vertical-align:middle;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+  
+  }
+
+
+
+
+#contactus {
+	text-align: center;
+	color: white;
+	padding: 31px;
+	margin-top: 50px;
+
+}
+a:link{
+	 background-color: transparent; color: yellow; text-decoration: none;}
+
+ 
+
+
+ #right{
+      	text-align: right;
+      	word-spacing: 30px;
+      	padding: 10px;
+      
+      }
+
+ #Wrapper{
+	height: 100%;
+	position: absolute;
+}
+
+ #header {
+ 	background:url("http://i.imgur.com/4xbtAJZ.jpg");
+ 	background-repeat: no-repeat;
+ 	background-size: 155px 95px;
+ 	background-color:#663300;
+    color:white;
+    clear:both;
+    text-align:left;
+    border-bottom:1px solid black; 
+    padding:10px 20px; 
+    position:fixed; 
+    top:0; 
+    left:0; 
+    z-index:2000; 
+    width:100%;
+ 	bottom: 0;
+ 	height: 75px;
+ 	
+    overflow: hidden;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    color:black;
+    
+    
+       
+   }
+  
+   }
+
+
+}
+
+
+#content{
+	text-align: center;
+	padding: 10px;
+	padding-bottom: 80px;
+}
+title{
+	word-spacing: 90px;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+}
+p{
+color: white;
+
+}
+
+body{
+
+	text-align: center;
+	margin:0;
+	padding-bottom: 20px;
+	height:100%;
+	overflow: scroll;
+	
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+
+
+border-width: 1px;
+border-color: #ccc;
+
+
+}
+
+
+ 
+
+</style>
+

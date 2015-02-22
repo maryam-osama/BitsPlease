@@ -1,0 +1,115 @@
+
+<!-- <h1>Listing articles</h1> -->
+<head>
+
+<style>
+header{
+text-align: left;
+background-image: url("http://c4.staticflickr.com/4/3871/14412996126_edc2da51c5_b.jpg");
+background-size: cover;
+
+}
+#header {
+    background-color:black;
+    color:white;
+    height: 40px;
+    text-align:center;
+    font-size: 30px;
+  }
+h2{
+  text-align: center;
+    font-size: 60px;
+    color: white;
+}
+h1{
+    font-size: 60px;
+    color: white;
+}
+input{
+  border:0 ;
+  padding:5px;
+  font-size:12px;
+  margin:100% 0 0 0;
+}
+input[type="submit"] {
+  background: blue;
+  color: white ;
+  border:0 ;
+  padding:5px;
+  font-size:12px;
+  margin:100% 0 0 0;
+}
+
+#nav {
+    line-height:30px;
+    background-color:#eeeeee;
+    height:100px;
+    width:28.5%;
+    float:left;
+     
+}
+#section {
+    width:71.5%;
+    float:left;
+    
+}
+#footer {
+    background-color:black;
+    color:white;
+    clear:both;
+    text-align:center;
+   
+}
+</style>
+</head>
+<body>
+  <header>
+  <br>
+    <h1 style="font-family:Cooper Black">BitsPlease</h1>
+    <br>
+    <br>
+    <h2 style="font-family:Cooper Black">Blogs</h2>
+    <br>
+  </header>
+
+
+<% if user_signed_in? %>
+<% if current_user.try(:admin?) %> 
+<%= link_to 'New article', new_article_path %>
+ <% end %>
+<% end %>
+ 
+
+<table>
+  <tr>
+    <th>Title</th>
+    <th>Text</th>
+     <th>User</th>
+    <th colspan="3"></th>
+  </tr>
+ 
+  <% @articles.each do |article| %>
+    <tr>
+      <td><%= article.title %></td>
+      <td><%= article.text %></td>
+      <td><%= article.user.email %></td>
+      <td><%= link_to 'Show', article_path(article) %></td>
+      <% if article.user == current_user  %>
+      <td><%= link_to 'Edit', edit_article_path(article) %></td>
+    <td><%= link_to 'Destroy', article_path(article),
+              method: :delete,
+              data: { confirm: 'Are you sure?' } %></td>
+      <% end %>    
+      
+    </tr>
+  <%end%>
+</table>
+
+
+
+
+
+
+
+
+</body>
