@@ -17,6 +17,8 @@
     <th>Text</th>
     <th colspan="2"></th>
   </tr>
+  
+ <%= link_to "sign out", destroy_user_session_path, :method => :delete %>
  
   <% @articles.each do |article| %>
     <tr>
