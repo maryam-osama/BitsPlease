@@ -11,6 +11,13 @@
       <td><%= request.id %></td>
       <td><%= request.user_email %></td>
        <td><%= link_to 'Show' , request_path(request) %></td>
+      
+              <td><%= link_to 'Accept', request_path(request),
+              method: :delete %></td>
+      <td><%= link_to 'Reject', request_path(request),
+              method: :delete %></td>
+       
+       
   
     </tr>
   
