@@ -3,6 +3,7 @@ Rails.application.routes.draw do
   get 'welcome/index'
   get 'requests/form'
   get 'requests/index'
+  get 'welcome/homepage'
   
 resources :requests do
 end
@@ -10,6 +11,7 @@ end
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
+   resources :applications
    root 'welcome#index'
    
 

@@ -1,0 +1,4 @@
+
+<% if current_user.try(:publisher?) %>
+<%= link_to 'add applications', new_applications_path %>
+<% end %>
