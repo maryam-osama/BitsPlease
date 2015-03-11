@@ -1,12 +1,7 @@
 class RequestsController < ApplicationController
     
     
-    
-    def form
-        
-    end
-    
-    def index
+     def index
         @requests=Request.all
     end
     
@@ -18,23 +13,25 @@ class RequestsController < ApplicationController
     @request = Request.new
     end
    
-   def create
-   @request = Request.new(requests_params)
-   @request.save
-   end
+    def create
+    @request = Request.new(requests_params)
+    @request.save
+    end
    
   
   def destroy
+      
    @request = Request.find(params[:id])
-  @request.destroy
+   @request.destroy
    @request.save
-  current_user.publisher = true
-  @current_user.save
+   if  params[:number] == "1"
+   current_user.publisher = true
+   @current_user.save
+   end
    redirect_to requests_path
    
-end
-  
- 
+  end
+
   private
   def requests_params
     params.require(:request).permit(:reason, :user_email)

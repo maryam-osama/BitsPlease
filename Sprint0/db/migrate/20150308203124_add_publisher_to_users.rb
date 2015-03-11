@@ -3,7 +3,6 @@ class AddPublisherToUsers < ActiveRecord::Migration
     add_column :users, :publisher, :boolean
    end
 
-  class AddAdminToUsers < ActiveRecord::Migration
       def self.up
         add_column :users, :publisher, :boolean, :default => false
       end
@@ -12,4 +11,4 @@ class AddPublisherToUsers < ActiveRecord::Migration
         remove_column :users, :publisher
       end
   end
-end
+

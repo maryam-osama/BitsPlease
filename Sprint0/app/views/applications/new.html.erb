@@ -1,0 +1,21 @@
+<h1>New Application</h1>
+<%= form_for :application, url: applications_path do |f| %>
+  <p>
+    <%= f.label :appname %><br>
+    <%= f.text_field :appname %>
+  </p>
+ 
+  <p>
+    <%= f.label :description %><br>
+    <%= f.text_area :description %>
+  </p>
+  
+    <p>
+    <%= f.label :price %><br>
+    <%= f.text_field :price %>
+  </p>
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
