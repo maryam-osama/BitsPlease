@@ -5,13 +5,13 @@ Rails.application.routes.draw do
   get 'requests/index'
   get 'welcome/homepage'
   
-resources :requests do
-end
+resources :requests 
+resources :applications
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-   resources :applications
+  
    root 'welcome#index'
    
 
