@@ -1,9 +1,19 @@
 class ApplicationsController < ApplicationController
     
+    
     def new 
     end
     
-     def show
+   def index
+   if params[:search]
+    @applications = Application.search(params[:search]).order("created_at DESC")
+    end
+  end
+  # It returns the articles whose titles contain one or more words that form the query
+
+    
+    
+    def show
     @application = Application.find(params[:id])
     end
     def create 

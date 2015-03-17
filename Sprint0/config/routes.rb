@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
   devise_for :users
-  get 'welcome/index'
+  get 'index' => 'welcome#index'
   get 'requests/form'
   get 'requests/index'
   get 'welcome/homepage'
+  
   
   
 resources :requests 

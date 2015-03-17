@@ -1,4 +1,7 @@
 class CreateApplications < ActiveRecord::Migration
+  
+ 
+  
   def change
     create_table :applications do |t|
       t.string :appname
@@ -9,4 +12,8 @@ class CreateApplications < ActiveRecord::Migration
       t.timestamps
     end
   end
+  
+ 
+  
+  
 end

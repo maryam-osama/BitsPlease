@@ -11,3 +11,11 @@
 <%= link_to 'Request', new_request_path %>
 <% end %>
 <% end %>
+
+
+<%= form_tag(applications_path, :method => "get" ) do %>
+  <%= label_tag(:q, "Search for:") %>
+  <%= text_field_tag(:q) , placeholder: "Search Applications" %> %>
+  <%= submit_tag("Search") %>
+<% end %>
+

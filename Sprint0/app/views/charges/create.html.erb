@@ -1,1 +1,4 @@
-<h2>Thanks, you paid <strong>$5.00</strong>!</h2>
+<h2>Thanks, you paid  $ <strong> <%=  (params[:number]).to_i / 100 =%> </strong>!</h2>
+
+<%= params[:application] =%>
+
